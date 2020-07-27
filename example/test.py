@@ -1,6 +1,6 @@
 import twythonx
 
-"""
+
 import time
 #-------------- create node : name example --------------#
 ipc = twythonx.IPC("example")
@@ -24,3 +24,5 @@ filecsv = twythonx.fileAPI('out.csv')
 
 filecsv.writeFile(resultDict)
 print(resultDict)
+
+"""

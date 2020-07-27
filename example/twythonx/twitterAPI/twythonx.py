@@ -1,6 +1,6 @@
 from twython import Twython
 from twython import TwythonStreamer
-from datetime import date
+import datetime
 class TweetStreamer(TwythonStreamer):
     def on_success(self, data):
         if 'text' in data:
@@ -45,7 +45,7 @@ class twit:
     def search2(self,text,*args,**kwrgs):
         #q => searched quote
         #result_type >> recent, popular, mixed
-        defKwrgs = {'result_type' : 'recent','lang' :'en','count' : 15,'until': str(date.today())}
+        defKwrgs = {'result_type' : 'recent','lang' :'en','count' : 15,'until': str(datetime.date.today()+datetime.timedelta(days=1))}
         for k,item in kwrgs.items():
             defKwrgs[k] = item
 
