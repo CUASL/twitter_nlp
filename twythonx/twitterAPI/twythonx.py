@@ -51,7 +51,7 @@ class twit:
 
         results = self.twitter.search(q=text,\
             result_type = defKwrgs['result_type'],\
-            lang =defKwrgs['lang'],\
+            lang = defKwrgs['lang'],\
             count = int(defKwrgs['count']),\
             until = defKwrgs['until']    )
         #this function return results.keys() = ['statuses','meta_data'] we use only 'statuses' here

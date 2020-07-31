@@ -6,17 +6,15 @@ import time
 ipc = twythonx.IPC("example")
 api = twythonx.twit()
 #-------- start server : publish topic : "test"  --------#
-ipc.server("test")
+serv = twythonx.server("test")
 
 while ipc.isRun():
     resultDict = api.search2('#cuasl','text','tweet_when')
     
-    
-
     msg = twythonx.toJson(resultDict)
     #print(msg)
 
-    ipc.publish(msg,show = "on")
+    serv.publish(msg,show = "on")
 
     #sleep 1 sec
     time.sleep(5)

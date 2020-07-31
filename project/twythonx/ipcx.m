@@ -49,8 +49,12 @@ classdef ipcx < handle
            sub = rossubscriber(topic, func);
            obj.topic =topic;
            obj.sub = sub;
-        end
+       end
         
+       function data = receive(obj)
+            data = receive(obj.sub).Data;
+       end
+      
         
     end
 end
