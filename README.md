@@ -55,15 +55,28 @@ addpath('twythonx')
 ## Usage
 You can get start and see more tutorial [wiki](https://github.com/CUASL/ipcx/wiki)
 
-### How to run
+### How to run(For twitter API only)
+If you want to use only twitter API, you can install only twitter API(twythonxx) and for more information at  [here](https://github.com/CUASL/twitterAPI)
+
+*Note* For twythonx you must run python3 on WSL only, but in twythonxx can run on Windows, Mac, Ubuntu, WSL, etc.
+This example will show how to run on WSL.
+
+*   **step 1** open WSL
+*   **step 2**  run following command (replace your file Name)
+```bash
+python3 yourFileName.py
+```
+
+
+### How to run(For using IPCx and using twitterAPI+IPCx)
 This example will show case server: python and client: matlab
 
-*    **step** 1 open WSL
+*    **step 1** open WSL
 ```bash
 roscore
 ```
 
-*   **step 2** open another WSL and run your serverfile 
+*   **step 2** open another WSL and run your serverfile  (replace your file Name)
 ```bash
 python3 yourServerFileName.py
 ```
@@ -73,7 +86,7 @@ python3 yourServerFileName.py
 python3 ex_publisher.py
 ```
 
-*   **step 3** open matlab and run your client file
+*   **step 3** open matlab and run your client file (replace your file Name)
 
 *for example(run in matlab bash or you can click run at matlab UI)*
 ```matlab
