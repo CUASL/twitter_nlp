@@ -1,6 +1,6 @@
 # twythonx
 
-Twythonx is a library that can search tweet and post tweet. Moreover, Twythonx includes inter-process communication library which is called twythonx.  
+Twythonx is a library that can search tweet and post tweet. Moreover, Twythonx includes inter-process communication library which is called IPCx.  
 You can search tweet and select parameter to search. For more information about search parameter of twitter [here](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets).
 
 IPCx is stand for Inter-process communication x.
@@ -45,11 +45,11 @@ to your project directory so that you can use our library.
     
 python
 ```python
-import ipcx
+import twythonx
 ```
 matlab
 ```matlab
-addpath('ipcx')
+addpath('twythonx')
 ```
 
 ## Usage
