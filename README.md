@@ -3,7 +3,7 @@
 Twythonx is a library that can search tweet and post tweet. Moreover, Twythonx includes inter-process communication library which is called IPCx.  
 You can search tweet and select parameter to search. For more information about search parameter of twitter [here](https://developer.twitter.com/en/docs/tweets/search/api-reference/get-search-tweets).
 
-IPCx is stand for Inter-process communication x.
+IPCx stands for Inter-process communication x.
 Our IPC type is publish–subscribe pattern. Now we are developing it with **matlab** and **python3** which are based on **ROS** .
 The IPCx runs python3 on WSL but runs matlab on Windows 10. 
 
